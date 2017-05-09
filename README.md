@@ -1,4 +1,4 @@
-# Google Search Results
+# Pomodoro Clock
 [View in web browser](https://demo318.github.io/pomodoro-clock/).
 
 This project is completed as a submission for the Pairing Project in the Web Development 101 curriculum at [The Odin Project](http://theodinproject.com). A full description of the assignment can be found [here](https://www.theodinproject.com/courses/web-development-101/lessons/pairing-project?ref=lc-pb).
