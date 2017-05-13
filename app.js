@@ -26,9 +26,6 @@ var renderTimer = function () {
         $(".workflow-commands .button").removeClass("highlight");
         $(currentClass).addClass("highlight");
     }
-    if (isRunning && $(".start-timer").hasClass("start")) {
-            $(".start-timer").html("Pause").removeClass("start").addClass("pause")
-        }
 };
 
 var timerEnded = function() {
@@ -81,6 +78,10 @@ var setStartButton = function () {
     $(".start-timer").html("Start").removeClass("pause").addClass("start");
 }
 
+var setPauseButton = function () {
+    $(".start-timer").html("Pause").removeClass("start").addClass("pause")
+}
+
 $(document).ready(function () {
     
 
@@ -123,7 +124,10 @@ $(document).ready(function () {
         }
         if ($(".start-timer").hasClass("pause")) {
             setStartButton()
+        } else {
+            setPauseButton()
         }
+        
     })
     
     $(".timer-control .reset-timer").on("click", function() {
